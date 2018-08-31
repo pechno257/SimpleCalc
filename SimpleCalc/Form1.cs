@@ -16,5 +16,11 @@ namespace SimpleCalc
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+
+        }
     }
 }

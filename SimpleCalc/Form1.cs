@@ -26,9 +26,15 @@ namespace SimpleCalc
             if ((result.Text == "0") || (oprPressed))
                 result.Clear();
 
-            Button b = (Button)sender;
-            result.Text = result.Text + b.Text;
             oprPressed = false;
+            Button b = (Button)sender;
+            if (b.Text == ".")
+            {
+                if (!result.Text.Contains("."))
+                    result.Text = result.Text + b.Text;
+            }
+            else
+                result.Text = result.Text + b.Text;
         }
 
         private void BtnClearEntry_Click(object sender, EventArgs e)
@@ -71,7 +77,7 @@ namespace SimpleCalc
         private void BtnClear(object sender, EventArgs e)
         {
             value = 0;
-            result.Clear();
+            result.Text = "0";
         }
     }
 }

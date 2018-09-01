@@ -65,6 +65,12 @@ namespace SimpleCalc
             } // End switch
             oprPressed = true;
         }
+
+        private void BtnClear(object sender, EventArgs e)
+        {
+            value = 0;
+            result.Clear();
+        }
     }
 }
 

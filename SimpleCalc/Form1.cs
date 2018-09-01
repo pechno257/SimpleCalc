@@ -19,6 +19,9 @@ namespace SimpleCalc
 
         private void Button_Click(object sender, EventArgs e)
         {
+            if (result.Text == "0")
+                result.Clear();
+
             Button b = (Button)sender;
             result.Text = result.Text + b.Text;
 

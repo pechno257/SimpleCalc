@@ -41,11 +41,14 @@ namespace SimpleCalc
             Button b = (Button)sender;
             opr = b.Text;
             value = double.Parse(result.Text);
+            equation.Text = value + " " + opr;
             oprPressed = true;
         }
 
         private void BtnEqual(object sender, EventArgs e)
         {
+            equation.Text = "";
+
             switch(opr)
             {
                 case "+":

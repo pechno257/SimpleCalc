@@ -48,6 +48,7 @@
             this.btnPeriod = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
+            this.equation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSeven
@@ -258,11 +259,23 @@
             this.result.Text = "0";
             this.result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // equation
+            // 
+            this.equation.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.equation.AutoSize = true;
+            this.equation.BackColor = System.Drawing.Color.White;
+            this.equation.ForeColor = System.Drawing.Color.Silver;
+            this.equation.Location = new System.Drawing.Point(16, 23);
+            this.equation.Name = "equation";
+            this.equation.Size = new System.Drawing.Size(0, 13);
+            this.equation.TabIndex = 21;
+            // 
             // SimpleCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 288);
+            this.Controls.Add(this.equation);
             this.Controls.Add(this.result);
             this.Controls.Add(this.btnAddition);
             this.Controls.Add(this.btnPeriod);
@@ -314,6 +327,7 @@
         private System.Windows.Forms.Button btnPeriod;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.TextBox result;
+        private System.Windows.Forms.Label equation;
     }
 }
 

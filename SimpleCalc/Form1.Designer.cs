@@ -102,6 +102,7 @@
             this.btnClearEntry.TabIndex = 4;
             this.btnClearEntry.Text = "CE";
             this.btnClearEntry.UseVisualStyleBackColor = true;
+            this.btnClearEntry.Click += new System.EventHandler(this.btnClearEntry_Click);
             // 
             // btnClear
             // 

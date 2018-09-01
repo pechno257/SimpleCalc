@@ -28,7 +28,7 @@ namespace SimpleCalc
 
             Button b = (Button)sender;
             result.Text = result.Text + b.Text;
-
+            oprPressed = false;
         }
 
         private void BtnClearEntry_Click(object sender, EventArgs e)
@@ -66,7 +66,6 @@ namespace SimpleCalc
                 default:
                     break;
             } // End switch
-            oprPressed = true;
         }
 
         private void BtnClear(object sender, EventArgs e)

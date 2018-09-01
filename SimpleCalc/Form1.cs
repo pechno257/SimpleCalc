@@ -43,6 +43,28 @@ namespace SimpleCalc
             value = double.Parse(result.Text);
             oprPressed = true;
         }
+
+        private void BtnEqual(object sender, EventArgs e)
+        {
+            switch(opr)
+            {
+                case "+":
+                    result.Text = (value + double.Parse(result.Text)).ToString();
+                    break;
+                case "-":
+                    result.Text = (value - double.Parse(result.Text)).ToString();
+                    break;
+                case "*":
+                    result.Text = (value * double.Parse(result.Text)).ToString();
+                    break;
+                case "/":
+                    result.Text = (value / double.Parse(result.Text)).ToString();
+                    break;
+                default:
+                    break;
+            } // End switch
+            oprPressed = true;
+        }
     }
 }
 

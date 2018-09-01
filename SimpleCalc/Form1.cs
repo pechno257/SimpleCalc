@@ -12,6 +12,10 @@ namespace SimpleCalc
 {
     public partial class SimpleCalc : Form
     {
+        double value = 0;
+        string opr = "";
+        bool oprPressed = false;
+
         public SimpleCalc()
         {
             InitializeComponent();
@@ -19,7 +23,7 @@ namespace SimpleCalc
 
         private void Button_Click(object sender, EventArgs e)
         {
-            if (result.Text == "0")
+            if ((result.Text == "0") || (oprPressed))
                 result.Clear();
 
             Button b = (Button)sender;
@@ -27,9 +31,18 @@ namespace SimpleCalc
 
         }
 
-        private void btnClearEntry_Click(object sender, EventArgs e)
+        private void BtnClearEntry_Click(object sender, EventArgs e)
         {
             result.Text = "0";
         }
+
+        private void Opr_click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            opr = b.Text;
+            value = double.Parse(result.Text);
+            oprPressed = true;
+        }
     }
 }
+

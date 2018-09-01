@@ -92,6 +92,7 @@
             this.btnDivision.TabIndex = 3;
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = true;
+            this.btnDivision.Click += new System.EventHandler(this.Opr_click);
             // 
             // btnClearEntry
             // 
@@ -102,7 +103,7 @@
             this.btnClearEntry.TabIndex = 4;
             this.btnClearEntry.Text = "CE";
             this.btnClearEntry.UseVisualStyleBackColor = true;
-            this.btnClearEntry.Click += new System.EventHandler(this.btnClearEntry_Click);
+            this.btnClearEntry.Click += new System.EventHandler(this.BtnClearEntry_Click);
             // 
             // btnClear
             // 
@@ -123,6 +124,7 @@
             this.btnMultiplication.TabIndex = 8;
             this.btnMultiplication.Text = "*";
             this.btnMultiplication.UseVisualStyleBackColor = true;
+            this.btnMultiplication.Click += new System.EventHandler(this.Opr_click);
             // 
             // btnSix
             // 
@@ -176,6 +178,7 @@
             this.btnSubtraction.TabIndex = 13;
             this.btnSubtraction.Text = "-";
             this.btnSubtraction.UseVisualStyleBackColor = true;
+            this.btnSubtraction.Click += new System.EventHandler(this.Opr_click);
             // 
             // btnThree
             // 
@@ -219,6 +222,7 @@
             this.btnAddition.TabIndex = 17;
             this.btnAddition.Text = "+";
             this.btnAddition.UseVisualStyleBackColor = true;
+            this.btnAddition.Click += new System.EventHandler(this.Opr_click);
             // 
             // btnPeriod
             // 

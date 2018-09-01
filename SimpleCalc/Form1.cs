@@ -17,9 +17,10 @@ namespace SimpleCalc
             InitializeComponent();
         }
 
-        private void button_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
+            result.Text = result.Text + b.Text;
 
         }
     }
